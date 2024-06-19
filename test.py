@@ -11,7 +11,7 @@ class TestCalculaGanador(unittest.TestCase):
         votosxcandidato = {}
         for fila in data:
             candidato = fila[4]  # El nombre del candidato está en la columna 4
-            if fila[5] == '1':  # Verificar si el voto es válido (columna 5)
+            if fila[5] == '1': 
                 if candidato not in votosxcandidato:
                     votosxcandidato[candidato] = 0
                 votosxcandidato[candidato] += 1
